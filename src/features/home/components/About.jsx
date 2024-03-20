@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="w-4/5 text-left bg-grey-50">
+    <div className="w-5/6 text-left bg-grey-50">
       <span className="block text-xl mb-6">About</span>
       <p className="text-lg font-thin">
         Hello there! I'm Christian Deniz, a graduate of Cal Poly Pomona with a

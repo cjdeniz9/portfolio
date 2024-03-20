@@ -6,7 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Footer() {
   return (
-    <div className="w-4/5">
+    <div className="w-5/6">
       <div className="w-full border-[1px] border-[#2d2d2d] mb-8" />
       <div className="flex w-full justify-between">
         <div>

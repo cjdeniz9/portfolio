@@ -48,7 +48,7 @@ export default function TechnicalSkills() {
     },
   ];
   return (
-    <div className="w-4/5">
+    <div className="w-5/6">
       <span className="block text-xl mb-8 text-left">Technical Skills</span>
       <div className="flex">
         {techStack.map((item) => {
