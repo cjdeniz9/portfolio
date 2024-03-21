@@ -61,7 +61,7 @@ export default function Projects() {
                   sx={{
                     backgroundClip: "text",
                     backgroundImage:
-                      "linear-gradient(to bottom, #58ffb4, #289061)",
+                      "linear-gradient(to top, #58ffb4, #289061)",
                     color: "transparent",
                     fontWeight: "600",
                     fontSize: "18px",
