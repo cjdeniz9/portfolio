@@ -22,10 +22,10 @@ export default function Index() {
       </div>
       <div className="md:h-64 h-48 bg-gradient-to-b from-black-50 to-grey-50" />
       <div className="w-full bg-grey-50">
-        <div className="xl:mb-20 flex justify-center mb-24">
+        <div className="flex justify-center mb-20">
           <About />
         </div>
-        <div className="xl:mb-20 flex justify-center mb-24">
+        <div className="flex justify-center mb-20">
           <TechnicalSkills />
         </div>
         <div className="flex justify-center mb-10">

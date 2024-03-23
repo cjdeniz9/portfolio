@@ -42,7 +42,7 @@ export default function Projects() {
   ];
   return (
     <div className="w-5/6">
-      <span className="xl:text-xl md:text-2xl md:mb-10 block text-[27px] mb-8 text-left">
+      <span className="xl:text-xl md:mb-10 block text-2xl mb-8 text-left">
         Projects
       </span>
       <div className="xl:flex grid gap-6 grid-rows-3">
@@ -113,7 +113,6 @@ export default function Projects() {
                   display: "flex",
                   width: "100%",
                   justifyContent: "center",
-                  // padding: "0",
                 }}
               >
                 <Link href={item.githubURL}>
@@ -127,7 +126,7 @@ export default function Projects() {
                     <GitHubIcon
                       sx={{
                         color: "#666666",
-                        fontSize: { lg: "22px" },
+                        fontSize: { xs: "26px", lg: "22px" },
                         "&:hover": {
                           color: "#58ffb4",
                         },
@@ -147,7 +146,7 @@ export default function Projects() {
                       }}
                     >
                       <LinkIcon
-                        sx={{ fontSize: { lg: "28px" } }}
+                        sx={{ fontSize: { xs: "30px", lg: "28px" } }}
                         className="text-[#666666] hover:text-green-50"
                       />
                     </Button>

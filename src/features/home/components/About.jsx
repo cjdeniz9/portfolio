@@ -1,10 +1,8 @@
 export default function About() {
   return (
     <div className="w-5/6 text-left bg-grey-50">
-      <span className="xl:text-xl md:text-2xl md:mb-6 block text-[27px] mb-4">
-        About
-      </span>
-      <p className="xl:text-lg md:text-xl text-[22px] font-thin">
+      <span className="xl:text-xl md:mb-6 block text-2xl mb-4">About</span>
+      <p className="xl:text-lg md:text-xl text-lg font-thin">
         Hello there! I'm Christian Deniz, a graduate of Cal Poly Pomona with a
         Computer Information Systems major driven to make waves in the world of
         web development as an aspiring Front-end Developer. My journey into the
