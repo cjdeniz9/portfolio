@@ -2,6 +2,7 @@ import { Button } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
+import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 
@@ -28,7 +29,7 @@ export default function Projects() {
       githubURL: "https://github.com/cjdeniz9/Inventory",
       websiteURL: "https://inventory-tracker.pages.dev/home",
       img: Inventory,
-      desc: "Developed a dynamic website to track inventory to present performance metrics in a clear and actionable format.",
+      desc: "Developed a dynamic website to manage inventory by presenting financial performance metrics in a clear and actionable format.",
     },
     {
       id: 3,
@@ -41,8 +42,10 @@ export default function Projects() {
   ];
   return (
     <div className="w-5/6">
-      <span className="block text-xl mb-8 text-left">Projects</span>
-      <div className="flex justify-between">
+      <span className="xl:text-xl md:text-2xl md:mb-10 block text-[27px] mb-8 text-left">
+        Projects
+      </span>
+      <div className="xl:flex grid gap-6 grid-rows-3">
         {projects.map((item) => {
           return (
             <Card
@@ -51,12 +54,12 @@ export default function Projects() {
                 background:
                   "radial-gradient(100% 100% at 0% 0%, hsla(0, 0%, 100%, .03), transparent)",
                 border: "1px solid #2d2d2d",
-                width: "32.5%",
-                paddingY: ".75rem",
-                paddingX: "1.25rem",
+                width: { lg: "32.5%" },
+                paddingY: { xs: ".75rem", sm: "1.50rem", lg: ".75rem" },
+                paddingX: { xs: ".75rem", sm: "1.5rem", lg: "1.25rem" },
               }}
             >
-              <CardContent sx={{ width: "100%" }}>
+              <CardContent>
                 <Typography
                   sx={{
                     backgroundClip: "text",
@@ -64,9 +67,18 @@ export default function Projects() {
                       "linear-gradient(to top, #58ffb4, #289061)",
                     color: "transparent",
                     fontWeight: "600",
-                    fontSize: "18px",
+                    fontSize: {
+                      xs: "20px",
+                      sm: "24px",
+                      md: "28px",
+                      lg: "18px",
+                    },
                     lineHeight: "1.75rem",
-                    marginBottom: "1.25rem",
+                    marginBottom: {
+                      xs: "1.25rem",
+                      sm: "1.75rem",
+                      lg: "1.25rem",
+                    },
                     textAlign: "left",
                   }}
                 >
@@ -76,11 +88,22 @@ export default function Projects() {
                   <img
                     src={item.img}
                     alt="Project img"
-                    className="border-[1px] border-[#d3d3d3] rounded mb-6"
+                    className="xl:my-0 xl:mb-6 md:my-8 border-[1px] border-[#d3d3d3] rounded my-6"
                   />
                 </Link>
                 <Typography
-                  sx={{ color: "#fff", fontWeight: "500", textAlign: "left" }}
+                  sx={{
+                    color: "#fff",
+                    fontWeight: "500",
+                    fontSize: {
+                      xs: "18px",
+                      sm: "20px",
+                      md: "22px",
+                      lg: "14px",
+                    },
+                    marginBottom: { md: ".75rem", lg: "0rem" },
+                    textAlign: "left",
+                  }}
                 >
                   {item.desc}
                 </Typography>
@@ -90,6 +113,7 @@ export default function Projects() {
                   display: "flex",
                   width: "100%",
                   justifyContent: "center",
+                  // padding: "0",
                 }}
               >
                 <Link href={item.githubURL}>
@@ -100,7 +124,15 @@ export default function Projects() {
                       },
                     }}
                   >
-                    <GitHubIcon className="text-[#666666] hover:text-green-50" />
+                    <GitHubIcon
+                      sx={{
+                        color: "#666666",
+                        fontSize: { lg: "22px" },
+                        "&:hover": {
+                          color: "#58ffb4",
+                        },
+                      }}
+                    />
                   </Button>
                 </Link>
                 {item.websiteURL === "" ? (
@@ -114,7 +146,10 @@ export default function Projects() {
                         },
                       }}
                     >
-                      <LinkIcon className="text-[#666666] hover:text-green-50" />
+                      <LinkIcon
+                        sx={{ fontSize: { lg: "28px" } }}
+                        className="text-[#666666] hover:text-green-50"
+                      />
                     </Button>
                   </Link>
                 )}
