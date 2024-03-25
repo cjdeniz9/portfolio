@@ -10,8 +10,8 @@ export default function Footer() {
       <div className="w-full border-[1px] border-[#2d2d2d] mb-8" />
       <div className="flex w-full justify-between">
         <div>
-          <CopyrightIcon fontSize="small" />
-          <span className="xl:text-xs text-sm font-light">
+          <CopyrightIcon fontSize="small" className="text-white-50" />
+          <span className="xl:text-xs text-sm text-white-50 font-light">
             {" "}
             2024 Christian Deniz
           </span>

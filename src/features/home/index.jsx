@@ -9,7 +9,7 @@ import TechnicalSkills from "./components/TechnicalSkills";
 export default function Index() {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full bg-black-50">
         <div className="flex justify-center">
           <div className="absolute z-0 top-0">
             <GradientBg />

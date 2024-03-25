@@ -49,7 +49,7 @@ export default function TechnicalSkills() {
   ];
   return (
     <div className="w-5/6">
-      <span className="xl:text-xl xl:mb-8 md:mb-10 block text-2xl mb-16 text-left">
+      <span className="xl:text-xl xl:mb-8 md:mb-10 block text-2xl text-white-50 mb-16 text-left">
         Technical Skills
       </span>
       <div className="xl:flex md:grid-cols-none md:grid-rows-2 md:grid-flow-col md:gap-16 grid gap-12 grid-cols-3">
@@ -61,7 +61,7 @@ export default function TechnicalSkills() {
                   className={`devicon-${item.img} text-[#666666] text-4xl`}
                 ></i>
               </div>
-              <span className="xl:text-sm text-base font-light">
+              <span className="xl:text-sm text-white-50 font-light">
                 {item.name}
               </span>
             </div>

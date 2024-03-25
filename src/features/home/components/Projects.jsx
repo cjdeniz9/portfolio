@@ -42,7 +42,7 @@ export default function Projects() {
   ];
   return (
     <div className="w-5/6">
-      <span className="xl:text-xl md:mb-10 block text-2xl mb-8 text-left">
+      <span className="xl:text-xl md:mb-10 block text-2xl text-white-50 mb-8 text-left">
         Projects
       </span>
       <div className="xl:flex grid gap-6 grid-rows-3">
